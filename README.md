@@ -23,7 +23,7 @@ The school board wants to uphold the state-testing standards and have requested 
 ## Updated Analysis Results:
 
 Note: This is code and results showing the math and reading scores for the ninth graders at Thomas High School being replaced with NaNs.
-### Step 2. Select all the reading scores from the 9th grade at Thomas High School and replace them with NaN.
+### Step 2. Select all the reading scores from the ninth grade at Thomas High School and replace them with NaN.
 student_data_df.loc[(student_data_df["school_name"]=="Thomas High School")&(student_data_df["grade"]=="9th"),"reading_score"]=np.nan
 student_data_df
 
@@ -36,7 +36,7 @@ student_data_df
 
 ### The next several images are the original and updated DataFrames showing the results of the reading and math scores of ninth graders at Thomas High School being removed from the calculations.
 
-1.	A table showing the top five performing schools based on the passing rate.
+1.	A table showing the top five performing schools based on the passing rate - slight decrease in % Overall Passing from 90.948012 to 90.630324.
 
 Ninth grade scores included:
 ![Top 5 Schools - Original](https://user-images.githubusercontent.com/99366022/159623507-6f6af92d-f93d-4905-9880-ef4770df28a6.png)
@@ -44,7 +44,7 @@ Ninth grade scores included:
 Ninth grade scores removed:
 ![Top 5 Schools - Updated](https://user-images.githubusercontent.com/99366022/159624127-b20c72c6-a562-4760-9c3e-7978c3372f46.png)
 
-2.	A table showing the bottom five performing schools based on the passing rate.
+2.	A table showing the bottom five performing schools based on the passing rate - no change in the schools listed.
 
 Ninth grade scores included:
 ![Bottom 5 Schools - Original](https://user-images.githubusercontent.com/99366022/159623539-92030fc6-e5cc-4b82-8495-d82e6a9337dc.png)
@@ -52,7 +52,7 @@ Ninth grade scores included:
 Ninth grade scores removed:
 ![Bottom 5 Schools - Updated](https://user-images.githubusercontent.com/99366022/159623544-32a525f8-ea53-4cd8-bfb4-027294575745.png)
 
-3.	The average math score received by students in each grade at each school.
+3.	The average math score received by students in each grade at each school - NaN showing for ninth grade, no other changes.
 
 Ninth grade scores included:
 
@@ -62,7 +62,7 @@ Ninth grade scores removed:
 
 ![Average Math Scores - Updated](https://user-images.githubusercontent.com/99366022/159623607-dd0c492b-2646-4352-85d8-97cef6a97605.png)
 
-4.	The average reading score received by students in each grade at each school.
+4.	The average reading score received by students in each grade at each school - NaN showing for ninth grade, no other changes.
 
 Ninth grade scores included:
 
@@ -72,7 +72,7 @@ Ninth grade scores removed:
 
 ![Average Reading Scores - Updated](https://user-images.githubusercontent.com/99366022/159623655-08f1c547-f0a0-4f95-ac7c-8bd4e3fbab01.png)
 
-5.	The school’s performance based on the budget per student.
+5.	The school’s performance based on the budget per student - in the 631 - 645 range there is a slight decrease in % Overall Passing from 62.857656 to 62.778233.
 
 Ninth grade scores included:
 ![Spending Per Student - Original](https://user-images.githubusercontent.com/99366022/159623679-892bb643-4359-4bcf-a43c-3caa660a4f24.png)
@@ -80,7 +80,7 @@ Ninth grade scores included:
 Ninth grade scores removed:
 ![Spending Per Student - Updated](https://user-images.githubusercontent.com/99366022/159623684-2262dbf8-9a69-4b22-9de4-5b730b64afe3.png)
 
-6.	The school’s performance based on the school size.
+6.	The school’s performance based on the school size - in the Medium range there is a slight decrease in % Overall Passing from 90.621535 to 90.557997.
 
 Ninth grade scores included:
 ![Spending Per School Size - Original](https://user-images.githubusercontent.com/99366022/159623773-a5554387-44dd-474f-a2be-643f1e4397d9.png)
@@ -88,7 +88,7 @@ Ninth grade scores included:
 Ninth grade scores removed:
 ![Spending Per School Size - Updated](https://user-images.githubusercontent.com/99366022/159623812-f84ff093-adbb-42a0-8abb-5c904f9c736f.png)
 
-7.	The school’s performance based on the type of school.
+7.	The school’s performance based on the type of school - in Charter schools there is a slight decrease in % Overall Passing from 90.432244 to 90.392533.
 
 Ninth grade scores included:
 
